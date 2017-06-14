@@ -11,7 +11,7 @@ YOUR STYLES
 }
 
 main {
-    background: gray;
+    background: #ffffff;
     margin: 1em;
     padding: 1em;
     
@@ -21,9 +21,11 @@ main {
 }
 
 section {
-    background: steelblue;
+    background: rgba(0, 191, 248, 0.12);
     padding: 1em;
     margin: 1em;
+    opacity: 30%;
+    box-shadow: 4px 4px 18px lightblue;
     
     /* flexbox as child   */
     flex: 1 0 200px;
@@ -31,7 +33,52 @@ section {
     /* flexbox as parent   */
 }
 
+h1{
+    color: gray;
+    font-family: "Helvetica Neue";
+	font-size: 4em;
+	font-weight: 100;
+	line-height: 4px;
+    
+}
 
+h3 {
+    color: gray;
+    font-size: 3em;
+    font-family: "Helvetica Neue";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 100px;
+    text-shadow: 0px 2px lightgray;
+}
+
+p.title {
+    color: gray;
+    font-family: "Helvetica Neue";
+	font-style: thin;
+	font-weight: 100;
+	line-height: 100px; 
+}
+
+h4 { color: gray;
+    font-family: "Helvetica Neue";
+	font-size: 4em;
+	font-weight: 100;
+    text-align: center;
+	
+}
+
+button {
+    color: white;
+    align-content: flex-end;
+   
+}
+
+
+img {
+    width: 19em;
+}
 
 
 /********************
@@ -45,7 +92,7 @@ MEDIA QUERIES
   
   /* Diagnostic Styling. */
   body {
-       background: blue;
+       background: white;
   }
 
 }
@@ -59,7 +106,7 @@ MEDIA QUERIES
 
   /* Diagnostic Styling. */
   body {
-       background: green;
+       background: white;
   }
 
 }
@@ -73,7 +120,7 @@ MEDIA QUERIES
 
   /* Diagnostic Styling. */
 	body {
-       background: red;
+       background: white;
 	}
 	
 }

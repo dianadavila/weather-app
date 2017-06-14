@@ -1,19 +1,19 @@
-// Spokane
+// wenatchee
 $.simpleWeather({
-    location: '99203',
+    location: '98801',
     unit: 'f',
     success: function(weather) {
       
       // Display Data
-      $('.spokane .temp').text(weather.temp);
-      $('.spokane .city').text(weather.city);
-      $('.spokane img').attr('src', weather.image);
-      $('.spokane .title').text(weather.title);
+      $('.wenatchee .temp').text(weather.temp);
+      $('.wenatchee .city').text(weather.city);
+      $('.wenatchee img').attr('src', weather.image);
+      $('.wenatchee .title').text(weather.title);
       
       // If this condition, show this icon
         if ( 26 >= weather.code && 30 <= weather.code  ) {
             
-         $('.spokane .wi').addClass('wi-day-cloudy');   
+         $('.wenatchee .wi').addClass('wi-day-cloudy');   
             
         }
         
@@ -50,6 +50,27 @@ $.simpleWeather({
   
   });
 
+// leavenworth
+$.simpleWeather({
+    location: '98826',
+    unit: 'f',
+    success: function(weather) {
+      
+      // Display Data
+      $('.leavenworth .temp').text(weather.temp);
+      $('.leavenworth .city').text(weather.city);
+      $('.leavenworth img').attr('src', weather.image);
+       $('.leavenworth .title').text(weather.title);
+        
+      // Entire weather object
+      console.log(weather);
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      $('body').append('<p>No Weather. :-|</>');    
+    }
+  
+  });
 
 // On Click, Get Geolocation, Call Weather Function
 $('.geo button').click( function() {
